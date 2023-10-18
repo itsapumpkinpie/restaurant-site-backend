@@ -8,8 +8,10 @@ from .serializers import MenuSerializer
 
 # Вернёт по get-запросу данные и добавит новые по post-запросу
 class MenuAPIList(generics.ListCreateAPIView):
+    pagination_class = None
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
+
 
 class MenuAPIUpdate(generics.UpdateAPIView):
     queryset = Menu.objects.all()
