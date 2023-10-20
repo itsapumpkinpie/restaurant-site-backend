@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from menu.views import *
-from  feedback.views import *
+from feedback.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
